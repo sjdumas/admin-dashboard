@@ -214,7 +214,7 @@ a.menu-link:hover {
 	border-radius: 50px;
 }
 
-.user-info-section > i {
+.user-info-section > a > i {
 	font-size: 1.6rem;
 }
 
@@ -399,9 +399,7 @@ h4.announcement-heading,
 	.greeting-text {
 		font-size: 0.95rem;
 	}
-}
 
-@media (max-width: 768px) {
 	.menu-toggle {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -460,5 +458,10 @@ h4.announcement-heading,
 	.sidebar-wrapper,
 	.main-content-wrapper {
 		padding: 2rem;
+	}
+
+	.search-section,
+	.user-info-section {
+		padding-bottom: 5px;
 	}
 }
