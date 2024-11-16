@@ -7,7 +7,8 @@ This is a required project - Admin Dashboard - for The Odin Project (TOP).
 - JavaScript
 
 ## Resources
-- [ChatGPT](https://chatgpt.com/) - DALL-E avatar images
-- [FontAwesome](https://fontawesome.com/) - Font icons
+- [Avatartion](https://www.avatartion.com/) - Avatar images
+- [Google Material Icons](https://fonts.google.com/icons) - Font icons
+- [Satoshi Font](https://www.fontshare.com/fonts/satoshi) - Main body font
 
 Check out the [live demo](https://sjdumas.github.io/admin-dashboard).
