@@ -1,41 +1,29 @@
 @import url("../css/satoshi.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
-@import url("../fontawesome/css/all.min.css");
 
 :root {
-	--regular-weight-font: "Satoshi-Regular", "Inter", Arial, Helvetica,
-		sans-serif;
-	--medium-weight-font: "Satoshi-Medium", "Inter", Arial, Helvetica,
-		sans-serif;
-	--bold-weight-font: "Satoshi-Bold", "Inter", Arial, Helvetica, sans-serif;
+	--regular-weight-font: "Satoshi-Regular", "Inter", sans-serif;
+	--medium-weight-font: "Satoshi-Medium", "Inter", sans-serif;
+	--bold-weight-font: "Satoshi-Bold", "Inter", sans-serif;
 	--body-bg-color: #f1f5f9;
 	--body-font-color: #64748b;
 	--dark-font-color: #222222;
 	--simply-white: #ffffff;
+	--primary-color: #3c50e0;
+	--primary-secondary-color: #3c50e0f2;
+	--secondary-color: #64748b;
+	--tertiary-color: #dee4ee;
 	--placeholder-font-color: #9ca3af;
-	--dashboard-bg-color: #ffffff;
-	--dashboard-search-button: #64748b;
-	--dashboard-search-hover-button: #3c50e0f2;
-	--dashboard-drop-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
 	--sidebar-bg-color: #1c2434;
-	--sidebar-color: #dee4ee;
-	--sidebar-link-color: #dee4ee;
-	--sidebar-link-hover-color: #ffffff;
 	--sidebar-bg-hover-color: #333a48;
 	--sidebar-heading-color: #8a99af;
 	--main-bg-color: #eff2f7;
 	--project-card-border-color: #e2e8f0;
 	--project-card-font-color: #62656a;
-	--announcement-card-border-color: #64748b;
 	--item-shadow: 0px 8px 13px -3px rgba(0, 0, 0, 0.07);
-	--user-actions-link-color: #222222;
-	--user-actions-link-hover-color: #3c50e0f2;
 	--input-bg-color: #fafafa;
 	--input-bg-focus-color: #f5f5f5;
-	--button-color: #ffffff;
-	--button-bg-color: #3c50e0;
-	--button-bg-hover-color: #3c50e0f2;
 }
 
 * {
@@ -109,30 +97,25 @@ button {
 	padding: 10px 30px;
 	border-radius: 0.375rem;
 	border: none;
-	color: var(--button-color);
-	background-color: var(--button-bg-color);
+	color: var(--simply-white);
+	background-color: var(--primary-color);
 }
 
 button:hover {
-	background-color: var(--button-bg-hover-color);
+	background-color: var(--primary-secondary-color);
 }
 
 /* Dashboard classes */
 .dashboard-header {
 	grid-column: 2 / 3;
 	grid-row: 1 / 2;
-	background-color: var(--dashboard-bg-color);
+	background-color: var(--simply-white);
 	color: var(--dark-font-color);
-	box-shadow: var(--dashboard-drop-shadow);
 	display: grid;
 	grid-template-columns: 2fr auto;
 	align-items: center;
 	gap: 20px;
 	padding: 0 20px;
-}
-
-.dashboard-heading-fa-icon {
-	color: var(--simply-white);
 }
 
 .dashboard-heading > i,
@@ -163,11 +146,11 @@ a.menu-link {
 	text-align: left;
 	font-weight: 500;
 	font-size: inherit;
-	color: var(--sidebar-link-color);
+	color: var(--tertiary-color);
 }
 
 a.menu-link:hover {
-	color: var(--sidebar-link-hover-color);
+	color: var(--simply-white);
 	background-color: var(--sidebar-bg-hover-color);
 	border-radius: 2px;
 }
@@ -177,7 +160,7 @@ a.menu-link:hover {
 	font-size: 1.2rem;
 }
 
-.menu-icons {
+.icons {
 	font-size: inherit;
 	line-height: inherit;
 	display: inline-block;
@@ -189,7 +172,7 @@ a.menu-link:hover {
 	grid-column: 1 / 2;
 	grid-row: 1 / 3;
 	background-color: var(--sidebar-bg-color);
-	color: var(--sidebar-color);
+	color: var(--tertiary-color);
 	font-family: var(--medium-weight-font);
 	font-weight: 500;
 }
@@ -246,16 +229,16 @@ a.menu-link:hover {
 }
 
 .search-section > button {
-	color: var(--dashboard-search-button);
+	color: var(--secondary-color);
 	background-color: transparent;
 	padding: 2px 15px;
 }
 
 .search-section > button:hover {
-	color: var(--dashboard-search-hover-button);
+	color: var(--primary-secondary-color);
 }
 
-.search-button > .menu-icons {
+.search-button > .icons {
 	font-size: 1.6rem;
 }
 
@@ -272,11 +255,11 @@ a.menu-link:hover {
 
 .user-info-section > a > i {
 	font-size: 1.6rem;
-	color: var(--user-actions-link-color);
+	color: var(--dark-font-color);
 }
 
 .user-info-section > a > i:hover {
-	color: var(--user-actions-link-hover-color);
+	color: var(--primary-secondary-color);
 }
 
 .search-section > i,
@@ -362,7 +345,7 @@ h4.announcement-heading {
 }
 
 .card {
-	padding: 30px;
+	padding: 41px;
 	color: var(--project-card-font-color);
 	background-color: var(--simply-white);
 	border: 1px solid var(--project-card-border-color);
@@ -390,12 +373,12 @@ h4.announcement-heading,
 
 .user-actions > a,
 .user-info > a {
-	color: var(--user-actions-link-color);
+	color: var(--dark-font-color);
 }
 
 .user-actions > a:hover,
 .user-info > a:hover {
-	color: var(--user-actions-link-hover-color);
+	color: var(--primary-secondary-color);
 }
 
 /* Announcements & Trending Users */
@@ -434,7 +417,7 @@ h4.announcement-heading,
 
 .announcement-card > p {
 	padding-bottom: 2rem;
-	border-bottom: 2px solid var(--announcement-card-border-color);
+	border-bottom: 1px solid var(--secondary-color);
 }
 
 .announcement-card > p:last-of-type {
@@ -501,7 +484,7 @@ h4.announcement-heading,
 .dashboard-wrapper,
 .sidebar-wrapper,
 .main-content-wrapper {
-	padding: 1.5rem 2rem;
+	padding: 2rem;
 }
 
 .material-symbols-outlined {
