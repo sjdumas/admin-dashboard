@@ -345,7 +345,7 @@ h4.announcement-heading {
 }
 
 .card {
-	padding: 41px;
+	padding: 2.5rem;
 	color: var(--project-card-font-color);
 	background-color: var(--simply-white);
 	border: 1px solid var(--project-card-border-color);
@@ -398,7 +398,7 @@ h4.announcement-heading,
 
 .announcement-card,
 .trending-users {
-	padding: 30px;
+	padding: 1.8rem;
 	color: var(--project-card-font-color);
 	background-color: var(--simply-white);
 	border: 1px solid var(--project-card-border-color);
