@@ -126,6 +126,7 @@ button:hover {
 
 .dashboard-heading > i {
 	margin-right: 5px;
+	margin-bottom: 5px;
 }
 
 .menu-nav > ul > li,
@@ -151,8 +152,6 @@ a.menu-link {
 
 a.menu-link:hover {
 	color: var(--simply-white);
-	background-color: var(--sidebar-bg-hover-color);
-	border-radius: 2px;
 }
 
 .menu-link > i {
@@ -256,6 +255,7 @@ a.menu-link:hover {
 .user-info-section > a > i {
 	font-size: 1.6rem;
 	color: var(--dark-font-color);
+	margin-top: 5px;
 }
 
 .user-info-section > a > i:hover {
@@ -283,7 +283,7 @@ a.menu-link:hover {
 	display: grid;
 	grid-template-columns: 40px 1fr;
 	grid-template-rows: 1fr;
-	gap: 25px;
+	gap: 35px;
 	justify-content: start;
 	align-items: center;
 	justify-items: start;
@@ -313,14 +313,6 @@ a.menu-link:hover {
 	justify-content: flex-end;
 }
 
-.user-options > button {
-	margin: 0 10px;
-}
-
-.user-options > button:last-child {
-	margin-right: 0;
-}
-
 /* Projects */
 .main-content {
 	grid-column: 2 / 3;
@@ -345,7 +337,7 @@ h4.announcement-heading {
 }
 
 .card {
-	padding: 2.5rem;
+	padding: 2.6rem;
 	color: var(--project-card-font-color);
 	background-color: var(--simply-white);
 	border: 1px solid var(--project-card-border-color);
@@ -368,7 +360,7 @@ h4.announcement-heading,
 }
 
 .user-actions > a > i {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .user-actions > a,
